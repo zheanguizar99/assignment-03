@@ -66,7 +66,7 @@ Write definitions for as many of the following functions as you can in roughly
     - If `a > b` return `gcd(a-b, b)`
     - Otherwise return `gcd(a, b-a)`
 
-  where step (2) is the base case, and steps (3) and (4) are the recursive
+  where line (2) is the base case, and lines (3) and (4) are the recursive
   case.
 
 - `int fib(int n);`
