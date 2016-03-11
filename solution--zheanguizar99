@@ -1,0 +1,33 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+ 
+// finding the gcd between two numbers
+
+int gcd(int a, int b) {
+	
+	//abs
+	if (a < 0)
+		a *= -1;
+	if (b < 0)
+		b *= -1;
+
+	//base case
+	if (a == 0 || b == 0)
+		return (a == 0) ? b : a;
+
+	// recursive case
+	if (a > b)
+		return gcd(a - b, b);
+	else return gcd(a, b - a);
+
+}
+
+int main() {
+  
+  //example of a gcd that equals 2
+	cout << gcd(4, 2) << endl;
+
+	system("pause");
+	return 0;
+}
